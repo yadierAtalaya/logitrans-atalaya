@@ -1,0 +1,153 @@
+.navbar {
+	height: 80px;
+	display: flex;
+	position: sticky;
+	width: 100%;
+	top: 0;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+	background-color: #fff;
+	z-index: 10000;
+}
+
+.logo {
+	width: 200px;
+	margin-left: 1rem;
+}
+.logo img {
+	width: 100%;
+}
+
+.menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 0;
+}
+
+.menu li {
+	margin-right: 1.5rem;
+	list-style: none;
+}
+
+.menu li a {
+	display: inline-block;
+	text-decoration: none;
+	color: #073d78;
+	font-size: 0.8rem;
+	transition: color 0.3s;
+	font-weight: bold;
+}
+
+.menu li a:hover {
+	color: #ff6c0c;
+}
+
+.subMenu {
+	position: relative;
+}
+
+.subMenu > .iconListItem {
+	position: absolute;
+	right: -15px;
+	width: 8px;
+	transition: transform 0.5s;
+}
+
+.subMenu:hover > .iconListItem {
+	transform: rotate(90deg);
+}
+
+.listSubMenu {
+	position: absolute;
+	width: 300px;
+	margin-top: 200%;
+	opacity: 0;
+	transition: margin-top 0.3s, opacity 0.1s;
+	background-color: #fff;
+	padding: 1rem;
+	display: none;
+	border-left: 1px solid #ff6c0c;
+}
+
+.listSubMenu li a {
+	display: inline;
+	transition: transform 0.5s, color 0.5s;
+}
+
+.listSubMenu li:hover a {
+	transform: translateX(0.5em);
+	color: #ff6c0c;
+}
+
+.listItem {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 5px;
+}
+
+.iconListItem {
+	width: 5px;
+}
+
+.iconListItem svg {
+	width: 100%;
+	fill: #ff6c0c;
+}
+
+.subMenu:hover .listSubMenu {
+	margin-top: 0;
+	opacity: 1;
+	display: block;
+}
+
+.icons_handleMenu {
+	position: fixed;
+	top: 2.5rem;
+	right: 1rem;
+	color: orange;
+	z-index: 1000;
+	font-weight: bold;
+	font-size: 2rem;
+	cursor: pointer;
+	display: none;
+}
+
+@media (max-width: 800px) {
+	.navbar {
+		flex-direction: column;
+		position: fixed;
+		height: 100vh;
+		justify-content: center;
+		width: 50%;
+		gap: 1rem;
+		margin-left: -100%;
+		transition: margin-left 1s;
+	}
+
+	.navbarShow {
+		margin-left: 0;
+	}
+
+	.icons_handleMenu {
+		display: block;
+	}
+
+	.menu {
+		flex-direction: column;
+	}
+
+	.handleMenu {
+		display: block;
+	}
+
+	.logoMovil {
+		display: block;
+	}
+	.logo {
+		width: 150px;
+		margin-left: 1rem;
+	}
+}

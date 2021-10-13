@@ -1,0 +1,155 @@
+.SobreNosotros h2 {
+	padding: 3rem 0;
+	font-weight: 600;
+	font-size: 2.5rem;
+	font-family: 'Raleway', sans-serif;
+	color: #053b77;
+	position: relative;
+}
+
+.CardContainer {
+	margin: 0 auto;
+	display: flex;
+	gap: 2rem;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 80%;
+}
+
+.CardContainer p {
+	font-size: 1.15rem !important;
+	margin-top: 2rem;
+}
+
+.NuestroAlcance a {
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+	color: #fff;
+	background-color: #ff6c0c;
+	height: 30px;
+	width: 180px;
+	border-radius: 10px;
+}
+
+.NuestroAlcance a:hover {
+	border: 0.2rem solid #ff6c0c;
+	background: white;
+	color: #ff6c0c;
+}
+
+.initialTextContainer {
+	margin-top: 2rem;
+	padding: 0 1rem;
+	grid-template-rows: 1fr 1fr;
+	gap: 3rem;
+	justify-content: center;
+	font-family: 'Raleway', sans-serif;
+	width: 100%;
+}
+
+.initialTextContainer a {
+	font-size: 1.3rem;
+	font-weight: 500;
+	padding: 0.2rem 2rem;
+	text-decoration: none;
+	color: #fff;
+	background-color: #ff6c0c;
+	height: 30px;
+	width: 180px;
+	border-radius: 10px;
+}
+
+.initialTextContainer a:hover {
+	border: 0.2rem solid #ff6c0c;
+	background: white;
+	color: #ff6c0c;
+}
+
+.initialTextContainer h3 {
+	margin-top: 1.5rem;
+	font-weight: 700;
+	font-size: 1.9rem;
+	color: #053b77;
+	position: relative;
+}
+
+.initialTextContainer h3::before {
+	content: '';
+	background: #ff6c0c;
+	position: absolute;
+	bottom: -10px;
+	right: 0;
+	left: 0;
+	width: 15rem;
+	height: 0.2rem;
+	margin: 0 auto;
+}
+
+.initialTextContainer p {
+	margin-top: 3rem;
+	color: #053b77;
+	font-size: 1.13rem;
+	line-height: 1.6rem;
+	text-align: justify;
+	margin-bottom: 2rem;
+}
+
+.SecondPartContainer h4 {
+	text-align: center;
+	color: #053b77;
+	margin: 6rem 0 4rem 0;
+	font-weight: 700;
+	font-size: 1.8rem;
+	position: relative;
+}
+
+.SecondPartContainer h4::before {
+	content: '';
+	background: #ff6c0c;
+	position: absolute;
+	bottom: -10px;
+	right: 0;
+	left: 0;
+	width: 12rem;
+	height: 0.2rem;
+	margin: 0 auto;
+}
+
+.datos {
+	margin: 8rem 0;
+	display: flex;
+	justify-content: center;
+}
+
+.datos img {
+	width: 90%;
+}
+
+@media (min-width: 550px) {
+	.CardContainer {
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.initialTextContainer {
+		margin-top: 2rem;
+		display: grid;
+		padding: 0;
+		grid-template-rows: 1fr;
+		grid-template-columns: 48% 48%;
+	}
+}
+
+@media (max-width: 1250px) {
+	.CardContainer {
+		justify-content: center;
+	}
+	.initialTextContainer {
+		grid-template-columns: 80%;
+		grid-template-rows: 1fr 1fr;
+		gap: 3rem;
+	}
+}

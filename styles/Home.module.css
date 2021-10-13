@@ -1,0 +1,277 @@
+.container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	text-align: center;
+}
+
+.container h2 {
+	margin: 4rem 0;
+	font-size: 1.7rem;
+	color: #053b77;
+	position: relative;
+	font-weight: 600;
+}
+
+.container h2::before {
+	content: '';
+	width: 10rem;
+	margin: 0 auto;
+	height: 0.2rem;
+	position: absolute;
+	bottom: -15px;
+	right: 0;
+	left: 0;
+	background-color: #ff6c0c;
+}
+
+.img1 {
+	background: url('/primeraR.png');
+}
+
+.img2 {
+	background: url('/segundaR.png');
+}
+
+.img3 {
+	background: url('/primeraR.png');
+}
+
+.img {
+	height: 30rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.CardContainer {
+	margin: 0 auto;
+	display: flex;
+	gap: 2rem;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 80%;
+}
+
+.card {
+	width: 100%;
+	height: 25rem;
+	position: relative;
+	font-family: 'Raleway', sans-serif;
+	padding: 1rem;
+	text-align: justify;
+	font-size: 0.95rem;
+	border-radius: 0.8rem;
+	color: #053b77;
+	box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.349);
+}
+
+.card h3 {
+	font-family: 1.1rem;
+	font-weight: 700;
+	color: #053b77;
+	text-align: center;
+}
+
+.card div:nth-of-type(3) {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.card div:nth-of-type(3) p {
+	cursor: pointer;
+	margin: 0;
+	width: max-content;
+	background-color: #053b77;
+	color: white;
+	padding: 0 1rem;
+	font-weight: 600;
+	font-size: 1.5rem;
+	border-radius: 0 0 0.5rem 0;
+}
+
+.iconsContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0.5rem;
+	box-shadow: -0.5rem -0.5rem 0 #fbe2dd;
+	background-color: #ff6c0c;
+	height: 5rem;
+	margin: 0 auto;
+	width: 5rem;
+}
+
+.card:hover .iconsContainer {
+	background-color: white;
+	transition: 0.5s ease-in-out;
+}
+
+.card a {
+	text-decoration: none;
+}
+
+.NuestroAlcance {
+	text-align: justify;
+	margin-top: 5rem;
+	color: #053b77;
+	display: grid;
+	grid-template-columns: 41% 48%;
+	flex-wrap: wrap;
+	gap: 8rem;
+	justify-content: center;
+	font-family: 'Raleway', sans-serif;
+}
+
+.NuestroAlcance a {
+	padding: 0.2rem 2rem;
+	text-decoration: none;
+	color: #fff;
+	background-color: #ff6c0c;
+	height: 30px;
+	width: 180px;
+	border-radius: 10px;
+}
+
+.NuestroAlcance h3 {
+	font-size: 2.1rem;
+	text-align: center;
+}
+
+.NuestroAlcance a:hover {
+	border: 0.2rem solid #ff6c0c;
+	background: white;
+	color: #ff6c0c;
+}
+
+.ServiceCard {
+	margin-top: 5rem;
+	font-family: 'Raleway', sans-serif;
+}
+
+.ServiceCard h3 {
+	font-weight: 700;
+	font-size: 3rem;
+	font-weight: 700;
+	color: #ff6c0c;
+	position: relative;
+}
+
+.ServiceCard h3::before {
+	background-color: #ff6c0c;
+	bottom: -8px;
+	content: '';
+	height: 0.2rem;
+
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+
+	width: 22%;
+}
+
+.ServiceCard p {
+	color: #053b77;
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin: 0 auto;
+
+	line-height: 1.5rem;
+	padding-top: 2rem;
+	width: 90%;
+}
+
+.map {
+	margin: 5rem 0;
+}
+
+.map h4 {
+	margin-bottom: 1.5rem;
+}
+
+.map a {
+	background-color: #ff6c0c;
+	border-radius: 10px;
+	color: #fff;
+	height: 30px;
+
+	padding: 0.5rem 2rem;
+	text-decoration: none;
+	width: 180px;
+}
+.map a:hover {
+	border: 0.2rem solid #ff6c0c;
+	background: white;
+	color: #ff6c0c;
+}
+
+@media (min-width: 550px) {
+	.img1 {
+		background: url('/primera.png');
+	}
+	.img2 {
+		background: url('/segunda.png');
+	}
+	.img3 {
+		background: url('/tercera.png');
+	}
+	.img {
+		height: 40rem;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.CardContainer {
+		margin: 0 auto;
+		margin-top: 2rem;
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.card {
+		transition: 0.5s ease-in-out;
+		width: 23rem;
+		height: 22rem;
+		padding: 1rem;
+		border-radius: 0.8rem;
+		box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.349);
+	}
+
+	.card:hover {
+		background-color: #ff6c0c;
+		color: white;
+	}
+
+	.NuestroAlcance {
+		margin-top: 7rem;
+	}
+
+	.NuestroAlcance p {
+		font-size: 1.2rem;
+		text-align: justify;
+	}
+	.ServiceCard p {
+		width: 42%;
+	}
+}
+
+@media (max-width: 1250px) {
+	.NuestroAlcance {
+		grid-template-columns: 80%;
+		grid-template-rows: 1fr 1fr;
+		gap: 3rem;
+	}
+
+	.NuestroAlcance div:nth-of-type(2) {
+		grid-row: 2;
+	}
+	.CardContainer {
+		justify-content: center;
+	}
+}

@@ -1,0 +1,16 @@
+.title {
+	margin-bottom: 2.5em;
+	position: relative;
+	text-align: center;
+}
+
+.title::before {
+	content: '';
+	position: absolute;
+	display: block;
+	height: 3px;
+	width: 15%;
+	background: #ff6c0c;
+	bottom: -20px;
+	left: calc(43%);
+}

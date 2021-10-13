@@ -1,0 +1,30 @@
+.notFoundC {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: calc(100vh - 80px);
+}
+
+.btn_backCont {
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.btn_back {
+	background: #063061;
+	color: #fff;
+	border: none;
+	padding: 7px 15px;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+.btn_back:hover {
+	background-color: #b8a3ff;
+	transition: all 0.5s ease;
+	color: white;
+}

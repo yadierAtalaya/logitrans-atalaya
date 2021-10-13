@@ -1,0 +1,213 @@
+.formContainer {
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form {
+	background: #fff;
+	width: 90%;
+	max-width: 600px;
+	padding: 4.5em 3em;
+	border-radius: 10px;
+	box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.7);
+	text-align: center;
+	margin: 4em 0;
+}
+
+.form_title {
+	margin-bottom: 3em;
+	position: relative;
+}
+
+.form_title::before {
+	content: '';
+	position: absolute;
+	display: block;
+	height: 3px;
+	width: 40%;
+	background: #ff6c0c;
+	bottom: -20px;
+	left: calc(30%);
+}
+
+.form_link {
+	font-weight: 400;
+	color: #ff6c0c;
+}
+
+.form_container {
+	margin-top: 3em;
+	display: grid;
+	gap: 2em;
+}
+
+.form_group {
+	position: relative;
+	--color: #5757577e;
+}
+
+.form_input {
+	width: 100%;
+	background: none;
+	color: #706c6c;
+	font-size: 1rem;
+	padding: 0.5em 0.3em;
+	outline: none;
+	border: none;
+	border-bottom: 1.5px solid #ff6c0c;
+	font-family: 'Roboto', sans-serif;
+}
+
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label {
+	top: -18px;
+	font-size: 14px;
+	color: #063061;
+	transform-origin: left top;
+}
+
+.form_select {
+	width: 100%;
+	background: none;
+	color: #706c6c;
+	font-size: 1rem;
+	padding: 0.5em 0.3em;
+	outline: none;
+	border: none;
+	border-bottom: 1.5px solid #ff6c0c;
+	font-family: 'Roboto', sans-serif;
+}
+
+.form_select:focus + .form_label {
+	top: -18px;
+	font-size: 14px;
+	color: #063061;
+	transform-origin: left top;
+}
+
+.form_select_focus + .form_label {
+	top: -18px;
+	font-size: 14px;
+	color: #063061;
+	transform-origin: left top;
+}
+
+.form_label {
+	color: var(--color);
+	cursor: pointer;
+	position: absolute;
+	left: 5px;
+	top: 10px;
+	pointer-events: none;
+	transition: 0.5s ease all;
+}
+
+.politics {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	color: #063061;
+	justify-content: space-between;
+	padding-top: 2em;
+}
+
+.politics label a {
+	color: #ff6c0c;
+	text-decoration: none;
+}
+
+.politics input {
+	margin-right: 10px;
+}
+
+.btn_container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-top: 2.5em;
+}
+
+.btn_submit {
+	padding: 7px 25px;
+	cursor: pointer;
+	border: 2px solid #ff6c0c;
+	background: none;
+	border-radius: 15px;
+	color: #ff6c0c;
+	font-size: 1rem;
+	font-weight: bold;
+	transition: all 0.5s ease;
+	text-decoration: none;
+}
+
+.btn_submit:hover {
+	background: #ff6c0c;
+	color: #fff;
+}
+
+.form_line {
+	position: absolute;
+	bottom: 29px;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #063061;
+	transform: scale(0);
+	transform: left bottom;
+	transition: transform 0.5s ease-in-out;
+}
+
+.form_line_textarea {
+	position: absolute;
+	bottom: 6px;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #063061;
+	transform: scale(0);
+	transform: left bottom;
+	transition: transform 0.5s ease-in-out;
+}
+
+.form_input:focus ~ .form_line,
+.form_input:not(:placeholder-shown) ~ .form_line {
+	transform: scale(1);
+}
+
+.form_select:focus ~ .form_line {
+	transform: scale(1);
+}
+
+.form_select_focus ~ .form_line {
+	transform: scale(1);
+}
+
+.form_textarea:focus ~ .form_line_textarea,
+.form_textarea:not(:placeholder-shown) ~ .form_line_textarea {
+	transform: scale(1);
+}
+
+.form_textarea {
+	resize: none;
+}
+
+.alert {
+	color: rgb(240, 53, 53);
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+	margin-top: 5px;
+	visibility: hidden;
+}
+
+.visible {
+	visibility: visible;
+}
+
+@media (max-width: 600) {
+	.ajuste {
+		width: 400px;
+	}
+}

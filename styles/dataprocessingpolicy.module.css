@@ -1,0 +1,48 @@
+.title {
+	margin-bottom: 2em;
+	position: relative;
+	text-align: center;
+}
+
+.title::before {
+	content: '';
+	position: absolute;
+	display: block;
+	height: 3px;
+	width: 15%;
+	background: #ff6c0c;
+	bottom: -20px;
+	left: calc(43%);
+}
+
+.subtitle {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.subtitle li {
+	font-size: 1.3rem;
+	font-weight: 500;
+}
+
+.subtitle p {
+	font-size: 1rem;
+	font-weight: normal;
+}
+
+.six span {
+	font-weight: 500;
+	font-size: 1.1rem;
+}
+
+.six div p {
+	display: inline-block;
+}
+
+.ajuste {
+	display: flex;
+}
+
+.ajuste p {
+	margin-left: 5px;
+}
